@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The One With Fans — Samille Leão</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="back" href="../index.html#cases">← Voltar aos cases</a>
+    <a class="brand" href="../index.html" aria-label="Samille Leão, início"><span class="logo" aria-hidden="true"></span></a>
+  </div>
+</header>
+
+<main>
+  <!-- ABERTURA -->
+  <section class="stage cover">
+    <div class="wrap cover-grid">
+      <div>
+        <p class="label">UX Research · Product Design · UX/UI · Prototipação · Design System · IA</p>
+        <h1><span class="ln"><span>The One</span></span><span class="ln"><span>With Fans</span></span></h1>
+        <p class="tagline">Uma comunidade digital onde a última temporada não é o fim da conversa.</p>
+        <div class="cover-ctas">
+          <a class="btn solid" href="https://theonewithfans.vercel.app" target="_blank" rel="noopener" data-magnetic>Ver produto no ar <span class="arr">→</span></a>
+          <span class="live-pill"><i></i>Em uso por pessoas reais</span>
+        </div>
+        <dl class="facts">
+          <div><dt>Período</dt><dd>Ago a nov 2026 · 3 meses</dd></div>
+          <div><dt>Meu papel</dt><dd>UX/UI Designer, da pesquisa à direção da implementação</dd></div>
+          <div><dt>Ferramentas</dt><dd>Figma, Codex + MCP do Figma, GitHub, Claude Code, Supabase, Vercel</dd></div>
+        </dl>
+      </div>
+      <!-- Para trocar pela capa de compartilhamento (sofá, porta roxa e polaroides): <div class="cover-media"><img src="../img/twf-capa.jpg" alt="..."></div> -->
+      <div class="phone-scene" data-carousel aria-label="Telas reais do produto no celular">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+        <div class="phone">
+          <div class="screen slides">
+            <img class="slide on" src="../img/twf-m-home.jpg" alt="Home: Olá, Sami! O sofá está liberado, com a porta roxa e os polaroides dos personagens">
+            <img class="slide" src="../img/twf-m-debates.jpg" alt="Debates: Ross e Rachel estavam dando um tempo? Placar ao vivo 50% a 50%">
+            <img class="slide" src="../img/twf-m-notificacoes.jpg" alt="Notificações: curtidas e pedidos de amizade em tempo real">
+            <img class="slide" src="../img/twf-m-amigos.jpg" alt="Seus amigos: atividade recente, com quiz da temporada 8 em 6 de 6">
+          </div>
+        </div>
+        <div class="dots" role="group" aria-label="Escolher tela">
+          <button type="button" class="on">Home</button>
+          <button type="button">Debates</button>
+          <button type="button">Avisos</button>
+          <button type="button">Amigos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap case-layout">
+    <aside class="toc" aria-label="Capítulos do case">
+      <p class="label">Neste case</p>
+      <ol>
+        <li><a href="#desafio">O desafio</a></li>
+        <li><a href="#pesquisa">Pesquisa e definição</a></li>
+        <li><a href="#experiencia">A experiência</a></li>
+        <li><a href="#produto">Do protótipo ao produto</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+      </ol>
+    </aside>
+
+    <div class="chapters">
+      <!-- 1 -->
+      <section class="chapter" id="desafio">
+        <header class="reveal">
+          <p class="label">01 · O desafio</p>
+          <h2>A série acabou. A conversa, não.</h2>
+        </header>
+        <div class="callout reveal"><small>Pergunta de design</small>Como transformar uma série que terminou há mais de duas décadas numa experiência digital relevante para os fãs?</div>
+        <p class="intro reveal">Friends continua na rotina de quem reassiste aos episódios e compartilha referências, e ganha fãs novos no streaming. O problema: <strong>quem assiste pela primeira vez evita conversar para não levar spoiler, e quem já terminou não tem com quem relembrar.</strong></p>
+        <div class="grid-2">
+          <div class="box reveal"><span class="ic">Não era</span><h3>Mais um catálogo de episódios</h3><p>Listar temporadas não resolve o que os fãs sentem falta.</p></div>
+          <div class="box reveal"><span class="ic">Era</span><h3>O antes, o durante e o depois</h3><p>As conversas, as curiosidades, os debates e a vontade de compartilhar.</p></div>
+        </div>
+        <div class="duo reveal">
+          <figure class="browser">
+            <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>theonewithfans · desktop</span></div>
+            <img src="../img/twf-home.jpg" alt="Home publicada no computador: Olá, Sami!, a porta roxa, os polaroides e a jornada completa" loading="lazy">
+          </figure>
+          <figure class="mini-phone"><img src="../img/twf-m-home.jpg" alt="Home publicada no celular" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="chapter" id="pesquisa">
+        <header class="reveal">
+          <p class="label">02 · Pesquisa e definição do produto</p>
+          <h2>Uma comunidade, não um serviço para assistir</h2>
+        </header>
+        <p class="intro reveal">A pesquisa exploratória levou à decisão de direção. Analisei <strong>discussões públicas e conteúdos de fãs</strong> e estruturei um <strong>questionário sobre hábitos e expectativas</strong>. Desse material saíram dois perfis comportamentais de referência.</p>
+        <div class="grid-2">
+          <div class="box profile reveal"><span class="ic">Perfil · 35 a 55 anos</span><h3>Nostálgicos</h3><p>Valorizam a memória afetiva, os personagens e os episódios marcantes.</p></div>
+          <div class="box profile reveal"><span class="ic">Perfil · 15 a 30 anos</span><h3>Maratonistas digitais</h3><p>Buscam interatividade, quizzes e conteúdo para compartilhar.</p></div>
+        </div>
+        <p class="label reveal">Do conceito ao MVP</p>
+        <div class="mvp reveal">
+          <div class="cut"><b>Ficou para depois</b><span>Rankings</span><span>Missões</span><span>Colecionáveis</span><span>Eventos</span></div>
+          <ol class="flow flow-5">
+            <li><b>Jornada de episódios</b></li>
+            <li><b>Comunidade</b></li>
+            <li><b>Spoiler Shield</b></li>
+            <li><b>Quizzes</b></li>
+            <li><b>Perfil e conquistas</b></li>
+          </ol>
+        </div>
+        <p class="note reveal">O conceito inicial era maior. Para validar a proposta central, priorizei cinco experiências.</p>
+      </section>
+
+      <!-- 3 -->
+      <section class="chapter" id="experiencia">
+        <header class="reveal">
+          <p class="label">03 · A experiência</p>
+          <h2>Spoiler como regra do produto inteiro</h2>
+        </header>
+        <div class="callout reveal"><small>Decisão central</small>Tratar o spoiler como regra de todo o produto, e não como um aviso em cada post.</div>
+
+        <div class="shield-demo reveal">
+          <div>
+            <p class="label">Experimente · Spoiler Shield</p>
+            <h3 style="margin-top:10px">Protegido em todas as telas</h3>
+            <p>No primeiro acesso, a pessoa informa o último episódio que viu. Discussões, debates, curiosidades e perguntas de episódios posteriores ficam protegidos em todo o produto.</p>
+          </div>
+          <div class="post hidden">
+            <div class="who"><i></i><div><b>fã_da_monica</b><br><small>Debate · S10E18</small></div></div>
+            <p class="txt">O último episódio fechou a história do jeito perfeito. Aquela cena no apartamento vazio acabou comigo!</p>
+            <button class="reset" type="button" hidden>Ocultar de novo</button>
+            <div class="veil">
+              <div class="in" data-step="1">
+                <b>Debate do último episódio</b>
+                <span>Você está na S05E14.</span>
+                <div class="acts"><button type="button" data-act="ask">Revelar conteúdo</button></div>
+              </div>
+              <div class="in" data-step="2" hidden>
+                <b>Revelar mesmo assim?</b>
+                <span>Esse debate fala de episódios que você ainda não viu.</span>
+                <div class="acts"><button type="button" data-act="keep">Manter oculto</button><button type="button" class="primary" data-act="reveal">Revelar</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="label reveal">Onboarding em 4 passos · cada resposta personaliza algo</p>
+        <ol class="flow flow-4">
+          <li class="reveal"><b>Nome e personagem favorito</b><span>Identidade no perfil</span></li>
+          <li class="reveal"><b>Até onde assistiu</b><span>Configura o Spoiler Shield</span></li>
+          <li class="reveal"><b>Nível de conhecimento</b><span>Define o tamanho das rodadas de quiz</span></li>
+          <li class="reveal"><b>Senha</b><span>Conta criada</span></li>
+        </ol>
+        <div class="phones reveal">
+          <figure class="mini-phone"><img src="../img/twf-m-entrada.jpg" alt="Entrada: Seu lugar no sofá está guardado" loading="lazy"><figcaption>Entrada</figcaption></figure>
+          <figure class="mini-phone"><img src="../img/twf-m-passo1.jpg" alt="Passo 1: nome e personagem favorito" loading="lazy"><figcaption>Passo 1</figcaption></figure>
+          <figure class="mini-phone"><img src="../img/twf-m-quizzes.jpg" alt="Quizzes com perguntas liberadas até o episódio da pessoa" loading="lazy"><figcaption>Quizzes</figcaption></figure>
+        </div>
+
+        <div class="grid-2">
+          <div class="box reveal"><span class="ic">Navegação</span><h3>Cinco áreas e busca global</h3><p>Home, Episódios, Comunidade, Quizzes e Perfil.</p></div>
+          <div class="box reveal"><span class="ic">Identidade própria</span><h3>Lembra a série sem copiar</h3><p>Verde escuro e creme com laranja, lilás, azul e amarelo. Montserrat e Manrope, cards com o mesmo padrão e personagens autorais em estilo chibi. A porta roxa e o sofá fazem a referência.</p></div>
+        </div>
+
+        <p class="label reveal">Percentil no lugar de pódio</p>
+        <div class="rank reveal">
+          <div class="podium" aria-label="Pódio tradicional, descartado"><span>2º</span><span>1º</span><span>3º</span><small>Pódio: quem está no meio se sente perdedor</small></div>
+          <div class="percentile"><small>Resultado da semana</small><b>Você está entre os 3% que mais acertaram nesta semana</b><span>Percentil: todo mundo vê onde está, sem ranking de perdedores.</span></div>
+        </div>
+
+        <figure class="shot reveal"><img src="../img/cpc-wf-episodios.jpg" alt="Wireframes no Figma: temporadas, lista de episódios e página do episódio" loading="lazy"><figcaption>Wireframes no Figma: temporadas → lista de episódios → página do episódio.</figcaption></figure>
+        <figure class="shot reveal"><img src="../img/cpc-wf-comunidade.jpg" alt="Wireframes no Figma: comunidade e criar discussão" loading="lazy"><figcaption>Comunidade com filtro por progresso e marcação de spoiler ao criar uma discussão.</figcaption></figure>
+      </section>
+
+      <!-- 4 -->
+      <section class="chapter" id="produto">
+        <header class="reveal">
+          <p class="label">04 · Da prototipação ao produto funcional</p>
+          <h2>Não parei nas telas</h2>
+        </header>
+        <p class="intro reveal">Acompanhei a transformação das decisões de design numa aplicação real, usando <strong>IA como ferramenta de construção</strong>.</p>
+        <ol class="timeline">
+          <li class="reveal"><span class="dot">01</span><div><h3>Figma + Codex (MCP)</h3><p>Wireframes, jornadas e conexões entre telas, com uma biblioteca de componentes reutilizáveis.</p></div></li>
+          <li class="reveal"><span class="dot">02</span><div><h3>GitHub</h3><p>O código do projeto e o histórico de cada mudança.</p></div></li>
+          <li class="reveal"><span class="dot">03</span><div><h3>Claude Code + Supabase + Vercel</h3><p>A interface implementada, com contas, banco de dados, comunidade em tempo real e publicação na internet.</p></div></li>
+        </ol>
+        <div class="tbl reveal">
+          <table>
+            <thead><tr><th>O que eu decidi</th><th>Como a IA ajudou</th></tr></thead>
+            <tbody>
+              <tr><td>Problema, escopo do MVP e prioridades</td><td>Acelerou a construção das telas e da lógica</td></tr>
+              <tr><td>Regras do Spoiler Shield e do onboarding</td><td>Implementou as regras e os testes no navegador</td></tr>
+              <tr><td>Identidade visual, padrão de cards e ajustes de alinhamento</td><td>Aplicou o padrão em todas as páginas e no celular</td></tr>
+              <tr><td>Percentil no lugar de pódio, capas dos quizzes, conteúdo do dia</td><td>Gerou variações para eu escolher e refinar</td></tr>
+              <tr><td>O que estava bom o suficiente para publicar</td><td>Revisou riscos técnicos e de segurança</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout reveal"><small>Critério</small>Cada rodada de ajuste partiu de algo que eu via na tela e pedia para mudar. A IA ampliou o que eu conseguia construir. O critério de qualidade e a direção de design continuaram comigo.</div>
+        <!-- Para adicionar: wireframe do Figma ao lado da mesma tela publicada, e um vídeo curto percorrendo as jornadas -->
+      </section>
+
+      <!-- 5 -->
+      <section class="chapter" id="resultados">
+        <header class="reveal">
+          <p class="label">05 · Resultados e aprendizados</p>
+          <h2>No ar e em uso desde o primeiro dia</h2>
+        </header>
+        <p class="intro reveal">O produto foi usado pelos primeiros amigos no <strong>iPhone e no Android</strong>, com interação real desde o primeiro dia.</p>
+        <div class="evidence">
+          <div class="ev reveal"><strong>&lt; 30 min</strong><p>Uma discussão recebeu respostas e curtidas de pessoas diferentes, com notificações em tempo real.</p></div>
+          <div class="ev reveal"><strong>🛡</strong><p>O Spoiler Shield protegeu um debate do último episódio para uma amiga que ainda não terminou a série.</p></div>
+          <div class="ev reveal"><strong>6/6</strong><p>Uma amiga compartilhou espontaneamente no WhatsApp a imagem do resultado do quiz.</p></div>
+        </div>
+        <div class="phones reveal">
+          <figure class="mini-phone"><img src="../img/twf-m-notificacoes.jpg" alt="Notificações reais: curtidas e pedidos de amizade" loading="lazy"><figcaption>Notificações em tempo real</figcaption></figure>
+          <figure class="mini-phone"><img src="../img/twf-m-debates.jpg" alt="Debate do último episódio com placar ao vivo" loading="lazy"><figcaption>Debate do S10E18</figcaption></figure>
+          <figure class="mini-phone"><img src="../img/twf-m-amigos.jpg" alt="Atividade dos amigos com quiz da temporada 8 em 6 de 6" loading="lazy"><figcaption>Quiz 6/6 entre amigos</figcaption></figure>
+        </div>
+        <!-- Ainda dá para adicionar: print do debate protegido pelo Spoiler Shield e da imagem do quiz compartilhada no WhatsApp -->
+        <p class="label reveal">O que levo do projeto</p>
+        <div class="grid-2">
+          <div class="box reveal"><span class="ic">01</span><h3>Priorizar é tão importante quanto criar</h3><p>Um MVP enxuto deixou a proposta central clara.</p></div>
+          <div class="box reveal"><span class="ic">02</span><h3>Ver funcionando muda o design</h3><p>Desalinhamentos e ícones que mudavam de cor no iPhone só apareceram com o site rodando em aparelhos reais.</p></div>
+          <div class="box reveal"><span class="ic">03</span><h3>Design inclui o que não aparece</h3><p>Nome, privacidade, moderação e proteção contra spam decidem se um produto pode ser aberto ao público.</p></div>
+          <div class="box reveal"><span class="ic">04</span><h3>IA rende mais com direção de design</h3><p>O resultado dependeu do contexto, dos padrões e das revisões que eu fazia a cada rodada.</p></div>
+        </div>
+        <div class="medium-cta reveal">
+          <div>
+            <p class="label">Veja de perto</p>
+            <h3 style="margin-top:10px">O produto está no ar</h3>
+            <p>Crie uma conta, diga até onde assistiu e experimente o Spoiler Shield. A documentação completa está no Medium.</p>
+          </div>
+          <div class="cta-pair">
+            <a class="btn solid" href="https://theonewithfans.vercel.app" target="_blank" rel="noopener" data-magnetic>Abrir o produto <span class="arr">→</span></a>
+            <a class="btn ghost" href="https://medium.com/@santossamille/the-one-with-fans-como-transformei-uma-s%C3%A9rie-que-terminou-em-2004-numa-comunidade-viva-b7e76811a2db" target="_blank" rel="noopener" data-magnetic>Ler no Medium</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <a class="next-case" href="itau.html"><span>Próximo case</span><b>Itaú <i>→</i></b></a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Samille Leão · UX/UI Designer</span>
+    <a href="../index.html">Início</a>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

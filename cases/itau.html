@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Itaú — Samille Leão</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../css/site.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="back" href="../index.html#cases">← Voltar aos cases</a>
+    <a class="brand" href="../index.html" aria-label="Samille Leão, início"><span class="logo" aria-hidden="true"></span></a>
+  </div>
+</header>
+
+<main>
+  <section class="stage cover">
+    <div class="wrap cover-grid">
+      <div>
+        <p class="label">Case study · UX/UI Design · Projeto acadêmico</p>
+        <h1><span class="ln"><span>Itaú</span></span><span class="ln"><span>bancário digital</span></span></h1>
+        <p class="tagline">Um ecossistema integrado entre celular, computador e relógio, com foco em clareza, controle e consistência.</p>
+        <dl class="facts">
+          <div><dt>Natureza</dt><dd>Projeto acadêmico · EBAC</dd></div>
+          <div><dt>Atuação</dt><dd>UX/UI Designer</dd></div>
+          <div><dt>Método</dt><dd>Double Diamond</dd></div>
+          <div><dt>Plataformas</dt><dd>Mobile, desktop e watch</dd></div>
+          <div><dt>Testes</dt><dd>5 participantes · 4 tarefas</dd></div>
+          <div><dt>Período</dt><dd>2025</dd></div>
+        </dl>
+      </div>
+      <div class="cover-media figure-light"><img src="../img/itau-capa.jpg" alt="Capa do estudo de caso Projeto Itaú: redesign no computador, celular e relógio"></div>
+    </div>
+  </section>
+
+  <div class="wrap case-layout">
+    <aside class="toc" aria-label="Capítulos do case">
+      <p class="label">Neste case</p>
+      <ol>
+        <li><a href="#contexto">Contexto e desafio</a></li>
+        <li><a href="#discovery">Discovery</a></li>
+        <li><a href="#pesquisa">Pesquisa e insights</a></li>
+        <li><a href="#definicao">Definição</a></li>
+        <li><a href="#ux">Experiência do usuário</a></li>
+        <li><a href="#ui">UI Design</a></li>
+        <li><a href="#validacao">Validação</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+      </ol>
+    </aside>
+
+    <div class="chapters">
+      <section class="chapter" id="contexto">
+        <header class="reveal">
+          <p class="label">01 · Contexto e desafio</p>
+          <h2>Confiança sólida, experiência pesada</h2>
+        </header>
+        <p class="intro reveal">Bancos tradicionais competem com fintechs, e os usuários esperam experiências <strong>mais rápidas e simples</strong>. Mudanças frequentes nos apps bancários causam confusão e atrito em tarefas essenciais.</p>
+        <div class="grid-3">
+          <div class="box reveal"><span class="ic">Cenário</span><h3>Simplicidade e agilidade</h3><p>É o que os usuários passaram a exigir depois das fintechs.</p></div>
+          <div class="box reveal"><span class="ic">Risco</span><h3>Mudanças geram insegurança</h3><p>Atualizações constantes deixam as pessoas sem saber onde estão as coisas.</p></div>
+          <div class="box reveal"><span class="ic">Desafio</span><h3>Confiança + fluidez</h3><p>Manter a segurança de um banco tradicional com a leveza de um app digital.</p></div>
+        </div>
+        <div class="callout reveal"><small>Problema</small>Excesso de informação e mudanças constantes confundem os usuários e dificultam ações rápidas.</div>
+        <div class="prose reveal"><p><strong>Objetivo:</strong> criar um ecossistema integrado (mobile, desktop e watch) com foco em clareza, controle e consistência.</p></div>
+      </section>
+
+      <section class="chapter" id="discovery">
+        <header class="reveal">
+          <p class="label">02 · Discovery</p>
+          <h2>Antes de redesenhar, ouvir as reclamações</h2>
+        </header>
+        <p class="intro reveal">Analisei comentários e reclamações reais de usuários nas lojas de aplicativos e em sites de reclamação para entender os pontos de fricção.</p>
+        <div class="grid-3">
+          <div class="box reveal"><span class="ic">Desk research</span><h3>Lentidão e instabilidade</h3><p>Travamentos, demora para carregar e falhas de acesso.</p></div>
+          <div class="box reveal"><span class="ic">Desk research</span><h3>Excesso de informação</h3><p>Telas carregadas, difíceis de ler no dia a dia.</p></div>
+          <div class="box reveal"><span class="ic">Desk research</span><h3>Funções escondidas</h3><p>Dificuldade para encontrar o que é importante.</p></div>
+        </div>
+        <p class="label reveal">Matriz CSD · separar fato de suposição</p>
+        <div class="tbl reveal">
+          <table>
+            <thead><tr><th></th><th>O que levantei</th></tr></thead>
+            <tbody>
+              <tr><td>Certezas</td><td>O Itaú oferece muitos serviços financeiros · usuários têm problemas de usabilidade no app · o banco usa tecnologias avançadas de proteção de dados</td></tr>
+              <tr><td>Suposições</td><td>Funcionalidades poderiam ser apresentadas com mais clareza · jovens preferem bancos digitais pela facilidade · alguns clientes sentem falta de transparência nas taxas</td></tr>
+              <tr><td>Dúvidas</td><td>O Itaú é a conta principal dos usuários? · Como avaliam o acesso ao app? · Qual canal mais usam?</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="label reveal">Benchmark · simplicidade × confiança</p>
+        <div class="grid-2">
+          <div class="box reveal"><span class="ic">Banco digital</span><h3>Nubank</h3><p>App direto ao ponto, experiência simples e autonomia para o usuário.</p></div>
+          <div class="box reveal"><span class="ic">Banco tradicional</span><h3>Bradesco</h3><p>Ecossistema completo, vários canais de acesso e atendimento 24h.</p></div>
+        </div>
+      </section>
+
+      <section class="chapter" id="pesquisa">
+        <header class="reveal">
+          <p class="label">03 · Pesquisa e insights</p>
+          <h2>Dados no lugar do achismo</h2>
+        </header>
+        <p class="intro reveal">Questionário online com análise qualitativa das respostas abertas, sobre perfil, frequência de acesso, percepção de complexidade e pontos de frustração.</p>
+        <div class="statrow">
+          <div class="stat reveal"><strong data-count="54.6" data-dec="1" data-suffix="%">54,6%</strong><span>usam o app do Itaú todos os dias</span></div>
+          <div class="stat reveal"><strong data-count="45.5" data-dec="1" data-suffix="%">45,5%</strong><span>têm entre 25 e 34 anos</span></div>
+          <div class="stat reveal"><strong data-count="63.6" data-dec="1" data-suffix="%">63,6%</strong><span>se identificaram como mulheres</span></div>
+          <div class="stat warn reveal"><strong data-count="63.7" data-dec="1" data-suffix="%">63,7%</strong><span>deram nota de 1 a 3 aos recursos do app</span></div>
+        </div>
+        <div class="chart reveal" role="img" aria-label="Avaliação dos recursos do app de 1 a 5: nota 1, 18,2%; nota 2, 27,3%; nota 3, 18,2%; nota 4, 9,1%; nota 5, 27,3%.">
+          <p class="label">Como você avalia os recursos do app? (1 a 5)</p>
+          <div class="row warn"><span>Nota 1</span><span class="bar"><i class="grow-x" style="--w:18.2%"></i></span><span class="v">18%</span></div>
+          <div class="row warn"><span>Nota 2</span><span class="bar"><i class="grow-x" style="--w:27.3%"></i></span><span class="v">27%</span></div>
+          <div class="row warn"><span>Nota 3</span><span class="bar"><i class="grow-x" style="--w:18.2%"></i></span><span class="v">18%</span></div>
+          <div class="row"><span>Nota 4</span><span class="bar"><i class="grow-x" style="--w:9.1%"></i></span><span class="v">9%</span></div>
+          <div class="row"><span>Nota 5</span><span class="bar"><i class="grow-x" style="--w:27.3%"></i></span><span class="v">27%</span></div>
+          <div class="axis" aria-hidden="true"><span></span><div><span>0</span><span>25</span><span>50</span><span>75</span><span>100%</span></div><span></span></div>
+        </div>
+        <p class="label reveal">O que os usuários disseram</p>
+        <div class="quotes">
+          <blockquote class="reveal">“Deixar mais claro apenas as principais funções do app, atualmente possui muitas informações em um único lugar.”</blockquote>
+          <blockquote class="reveal">“Tem sido muitas mudanças, estão me deixando um pouco confusa.”</blockquote>
+          <blockquote class="reveal">“Se a gente tá numa emergência na rua, acaba tendo problemas. O app é algo que tem que ser de fácil e rápido acesso.”</blockquote>
+        </div>
+        <div class="callout reveal"><small>Insight central</small>O Itaú é percebido como sólido e confiável, mas a experiência digital pode ser mais fluida, direta e personalizável.</div>
+        <div class="decisions">
+          <div class="decision reveal"><span class="from">Simplificação melhora a autonomia</span><span class="arrow">→</span><span class="to">Menos elementos por tela e atalhos editáveis</span></div>
+          <div class="decision reveal"><span class="from">Consistência reduz o esforço mental</span><span class="arrow">→</span><span class="to">Um só padrão de componentes nos três dispositivos</span></div>
+          <div class="decision reveal"><span class="from">Transparência aumenta a confiança</span><span class="arrow">→</span><span class="to">Área dedicada a taxas e serviços</span></div>
+        </div>
+      </section>
+
+      <section class="chapter" id="definicao">
+        <header class="reveal">
+          <p class="label">04 · Definição</p>
+          <h2>Duas pessoas, uma mesma pressa</h2>
+        </header>
+        <div class="grid-2">
+          <div class="box persona reveal"><span class="ic">Persona · 28 anos · Gerente de Marketing</span><h3>Luana Matos</h3><p class="q">“Quero resolver rápido e sem distrações.”</p><p><b>Dores:</b> excesso de informação; tarefas simples levam mais tempo que o esperado.</p><p><b>Precisa de:</b> funções principais fáceis de achar e menos elementos que confundem.</p></div>
+          <div class="box persona reveal"><span class="ic">Persona · 32 anos · Analista de Sistemas</span><h3>Carlos Victor</h3><p class="q">“Quero praticidade, sem perder confiança.”</p><p><b>Dores:</b> suporte lento; dificuldade de acesso em emergências.</p><p><b>Precisa de:</b> acesso rápido, menos etapas e clareza em taxas e serviços.</p></div>
+        </div>
+        <p class="note reveal">Também mapeei empatia e a jornada de cada persona (pesquisando, decidindo, usando e compartilhando) para achar os momentos de atrito.</p>
+        <p class="label reveal">Grid de priorização · impacto × viabilidade</p>
+        <div class="moscow">
+          <div class="m must reveal"><b>Home run</b><span>Interface simplificada · Dashboard financeiro personalizável</span></div>
+          <div class="m should reveal"><b>Big bets</b><span>Transparência total de taxas e serviços · Interface intuitiva · Recursos educativos</span></div>
+          <div class="m reveal"><b>Quick wins</b><span>Personalização do app · Tela inicial personalizada · Acesso emergencial facilitado</span></div>
+        </div>
+        <p class="label reveal">Soluções escolhidas</p>
+        <div class="grid-4">
+          <div class="box reveal"><span class="ic">01</span><h3>Interface simplificada</h3><p>Navegação mais leve e eficiente.</p></div>
+          <div class="box reveal"><span class="ic">02</span><h3>Dashboard personalizável</h3><p>Cada pessoa vê o que importa para ela.</p></div>
+          <div class="box reveal"><span class="ic">03</span><h3>Transparência de taxas</h3><p>Informação clara gera confiança e fidelidade.</p></div>
+          <div class="box reveal"><span class="ic">04</span><h3>Personalização do app</h3><p>Atalhos ajustados às preferências do usuário.</p></div>
+        </div>
+      </section>
+
+      <section class="chapter" id="ux">
+        <header class="reveal">
+          <p class="label">05 · Experiência do usuário</p>
+          <h2>Um ecossistema, não três interfaces</h2>
+        </header>
+        <p class="intro reveal">Componentes, padrões e linguagem visual se conectam entre os dispositivos para <strong>reduzir esforço e aumentar a confiança</strong>.</p>
+        <div class="grid-3">
+          <div class="box reveal"><span class="ic">Mobile</span><h3>Agilidade</h3><p>Ações rápidas e visão objetiva do dia a dia.</p></div>
+          <div class="box reveal"><span class="ic">Desktop</span><h3>Visão completa</h3><p>Análise e organização financeira com mais detalhe.</p></div>
+          <div class="box reveal"><span class="ic">Watch</span><h3>Microtarefas</h3><p>Consultas e acessos rápidos no pulso.</p></div>
+        </div>
+        <figure class="shot reveal"><img src="../img/itau-wireframe.jpg" alt="Wireframes de baixa fidelidade das telas do app" loading="lazy"><figcaption>Wireframes do app: home, extrato, dashboard financeiro e transparência de taxas.</figcaption></figure>
+        <div class="callout reveal"><small>Decisão de estrutura</small>Os wireframes focaram em reduzir o excesso de informação e permitir as ações essenciais com menos etapas.</div>
+      </section>
+
+      <section class="chapter" id="ui">
+        <header class="reveal">
+          <p class="label">06 · UI Design</p>
+          <h2>Um guia de estilos para três telas</h2>
+        </header>
+        <p class="intro reveal">Defini cores, tipografia, ícones e padrões de componentes para manter a experiência coesa, reduzir variações e deixar a interface clara e escalável.</p>
+        <figure class="shot reveal"><img src="../img/itau-guia.jpg" alt="Guia de estilos com cores, ícones, tipografia e botões" loading="lazy"><figcaption>Cores, ícones, tipografias Itaú Text e Itaú Display, navegação e botões.</figcaption></figure>
+        <figure class="shot reveal"><img src="../img/itau-prototipo.jpg" alt="Protótipo de alta fidelidade: home, edição de atalhos e visão geral financeira" loading="lazy"><figcaption>Protótipo de alta fidelidade: home, edição de atalhos e visão geral financeira.</figcaption></figure>
+      </section>
+
+      <section class="chapter" id="validacao">
+        <header class="reveal">
+          <p class="label">07 · Validação</p>
+          <h2>Testes com usuários reais</h2>
+        </header>
+        <p class="intro reveal">Testes moderados para identificar dificuldades, medir a clareza das telas e garantir que as tarefas essenciais fossem concluídas com fluidez.</p>
+        <div class="statrow">
+          <div class="stat reveal"><strong>5</strong><span>participantes</span></div>
+          <div class="stat reveal"><strong>4</strong><span>tarefas por sessão</span></div>
+          <div class="stat reveal"><strong>12/12</strong><span>tarefas concluídas nas 3 sessões documentadas</span></div>
+          <div class="stat reveal"><strong>0</strong><span>problemas de criticidade alta</span></div>
+        </div>
+        <div class="tbl reveal">
+          <table>
+            <thead><tr><th>Tarefa</th><th>Tempo esperado</th><th>Média realizada*</th></tr></thead>
+            <tbody>
+              <tr><td>Consultar o dashboard financeiro</td><td>60 s</td><td>60 s</td></tr>
+              <tr><td>Acessar informações de taxas e juros</td><td>30 s</td><td>33 s</td></tr>
+              <tr><td>Avaliar se a interface é fácil de usar</td><td>45 s</td><td>40 s</td></tr>
+              <tr><td>Personalizar os atalhos do app</td><td>45 s</td><td>42 s</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note reveal">*Média das três sessões documentadas na apresentação (Aline, Marcus e Patrícia).</p>
+        <div class="quotes">
+          <blockquote class="reveal">“Achei muito legal poder escolher quais atalhos ficam na tela principal.”</blockquote>
+          <blockquote class="reveal">“É tudo bem intuitivo, e as informações são claras.”</blockquote>
+          <blockquote class="reveal">“A personalização dos atalhos foi tranquila, gostei de poder deixar só o que eu uso no dia a dia.”</blockquote>
+        </div>
+        <p class="label reveal">Melhorias identificadas</p>
+        <ul class="checklist">
+          <li class="reveal">Simplificar os termos técnicos na área de taxas</li>
+          <li class="reveal">Aumentar alguns ícones, pensando em quem tem dificuldade de visão</li>
+          <li class="reveal">Confirmar visualmente que a personalização dos atalhos foi salva</li>
+          <li class="reveal">Dar mais destaque a seções como Investimentos, que ficaram escondidas</li>
+        </ul>
+      </section>
+
+      <section class="chapter" id="resultados">
+        <header class="reveal">
+          <p class="label">08 · Resultados e aprendizados</p>
+          <h2>Mais limpa, objetiva e confiável</h2>
+        </header>
+        <div class="grid-3">
+          <div class="box reveal"><span class="ic">Resultado</span><h3>Mais fluidez</h3><p>Uma experiência mais intuitiva e escalável, alinhada às necessidades reais do dia a dia.</p></div>
+          <div class="box reveal"><span class="ic">Aprendizado</span><h3>Pequenos ajustes, grande impacto</h3><p>Clareza, consistência e feedback visual mudam a confiança do usuário em tarefas essenciais.</p></div>
+          <div class="box reveal"><span class="ic">Limitação</span><h3>Escopo acadêmico</h3><p>Sem acesso a métricas reais do app. Os próximos passos seriam testar em maior escala e medir antes e depois.</p></div>
+        </div>
+        <div class="medium-cta reveal">
+          <div>
+            <p class="label">Leitura completa</p>
+            <h3 style="margin-top:10px">Quer ver todo o processo?</h3>
+            <p>Jornadas, mapas de empatia, wireframes e todas as telas estão no Medium.</p>
+          </div>
+          <a class="btn solid" href="https://medium.com/@santossamille/estudo-ux-ui-ita%C3%BA-ebac-case-study-bfe72db29e36" target="_blank" rel="noopener" data-magnetic>Ler no Medium <span class="arr">→</span></a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <a class="next-case" href="sdp.html"><span>Próximo case</span><b>SDP <i>→</i></b></a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Samille Leão · UX/UI Designer</span>
+    <a href="../index.html">Início</a>
+  </div>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>
