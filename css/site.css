@@ -781,3 +781,50 @@ main,footer{position:relative;z-index:1}
 .mail a:hover{color:var(--hi)}
 .mail .copy{font:600 13px var(--font-body);padding:8px 14px;border-radius:999px;border:1.5px solid var(--stage-muted);background:transparent;color:var(--stage-fg);cursor:pointer}
 .mail .copy:hover{border-color:var(--hi);color:var(--hi)}
+
+/* ---------- Capas responsivas: o texto escala com o tamanho do card ---------- */
+.tc{container-type:inline-size;padding:7cqw;gap:3cqw}
+.tc{padding:7%}
+@supports (width:1cqw){
+  .tc > *{}
+  .tc-k{font-size:3.4cqw}
+  .tc-d{font-size:4.6cqw}
+  .tc-itau .tc-t,.fan a .tc-itau .tc-t{font-size:14cqw}
+  .tc-plat i{font-size:3.8cqw;padding:1.6cqw 3cqw}
+  .tc-plat{gap:1.6cqw}
+  .tc-sdp .tc-t{font-size:10.5cqw}
+  .tc-logo{font-size:14cqw;top:7cqw;left:7cqw}
+}
+.tc > *{min-width:0}
+.tc-t{overflow-wrap:anywhere}
+/* no leque: espaço para a etiqueta inferior */
+.fan a .tc-plat{margin-bottom:0}
+.fan a .tc{padding-bottom:64px}
+.fan a .tc-sdp{padding-bottom:64px}
+
+/* ---------- Toque: sem efeito de "card levantado" ---------- */
+@media (hover:none){
+  .fan .c2:hover{transform:rotate(-10deg)}
+  .fan .c3:hover{transform:rotate(8deg)}
+  .fan .c4:hover{transform:rotate(-1deg)}
+  .fan a:hover{box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06)}
+  .fan a:hover img{transform:none}
+  .card:hover .media.cs img.cs-main{transform:rotate(-5deg) translateX(-14%)}
+  .card:hover .media.cs .tc.cs-main{transform:rotate(-5deg) translateX(-38%)}
+  .card:hover .cs-side,.card:hover .dev-a,.card:hover .dev-b,.card:hover .site,.card:hover .comps{transform:none}
+}
+
+/* ---------- Capas da lista no celular ---------- */
+@media (max-width:640px){
+  .card .media.cs{min-height:330px}
+  .card .media.cs .tc.cs-main,.card:hover .media.cs .tc.cs-main{width:50%;transform:rotate(-4deg) translateX(-44%)}
+  .card .media.cs img.cs-main,.card:hover .media.cs img.cs-main{width:52%;transform:rotate(-4deg) translateX(-30%)}
+  .site,.card:hover .site{width:50%;right:4%;top:auto;bottom:10%;transform:rotate(3deg)}
+  .site-hero strong{font-size:15px}
+  .site-hero{padding:12px 10px 14px}
+  .site-nav i{display:none}
+  .dev,.card:hover .dev-a,.card:hover .dev-b{width:27%}
+  .dev-a{right:22%;top:16%}
+  .dev-b{right:4%;top:26%}
+  .cs-phone{width:30%;right:6%}
+}
