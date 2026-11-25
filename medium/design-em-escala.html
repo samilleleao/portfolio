@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design em escala: como um sistema modular transformou a produção de sites institucionais</title>
+<meta name="description" content="Uma iniciativa de UX/UI Design e DesignOps para aumentar a produtividade de uma equipe de design sem abrir mão da liberdade criativa.">
+<meta name="author" content="Samille Leão">
+<meta property="og:title" content="Design em escala: como um sistema modular transformou a produção de sites institucionais">
+<meta property="og:image" content="https://www.samilleleao.net/img/medium/01-capa.png">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#6b6b6b;--line:#e6e6e6;--accent:#0E6461}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#e8e8e8;--muted:#9a9a9a;--line:#2a2a2a;--accent:#5CCFC3}}
+body{margin:0;background:var(--bg);color:var(--fg);font:20px/1.6 Georgia,"Times New Roman",serif;padding:48px max(16px,env(safe-area-inset-left)) 80px}
+article{max-width:700px;margin:auto}
+h1,h2,h3{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:40px;margin:0 0 12px}h2{font-size:28px;margin:48px 0 8px}h3{font-size:22px;margin:32px 0 4px}
+figure{margin:32px 0}img{max-width:100%;height:auto;display:block;margin:auto}
+figcaption{font:14px/1.4 -apple-system,"Segoe UI",sans-serif;color:var(--muted);text-align:center;margin-top:10px}
+blockquote{border-left:3px solid var(--accent);margin:24px 0;padding-left:20px;font-style:italic}
+hr{border:0;text-align:center;margin:40px 0}hr::before{content:"· · ·";color:var(--muted);letter-spacing:.5em}
+a{color:var(--accent)}
+.note{font:15px/1.5 -apple-system,"Segoe UI",sans-serif;background:#f3f7f6;color:#334;border-radius:10px;padding:14px 18px;margin-bottom:32px}
+@media (prefers-color-scheme:dark){.note{background:#1c2624;color:#cfe}}
+</style>
+</head>
+<body>
+<article>
+<h1>Design em escala: como um sistema modular transformou a produção de sites institucionais</h1>
+<p><em>Uma iniciativa de UX/UI Design e DesignOps para aumentar a produtividade de uma equipe de design sem abrir mão da liberdade criativa.</em></p>
+<figure><img src="https://www.samilleleao.net/img/medium/01-capa.png" alt="Design em escala: mesma estrutura, identidades diferentes."><figcaption>Design em escala: mesma estrutura, identidades diferentes.</figcaption></figure>
+<hr>
+<h2>Resumo</h2>
+<p>Como acelerar a produção de sites institucionais sem transformar marcas diferentes em versões do mesmo template?</p>
+<p>Esse foi o desafio que recebi numa empresa com alta demanda, prazos curtos e uma fila com <strong>mais de 150 sites pendentes</strong>. Observando a rotina da equipe, percebi que muitas estruturas se repetiam de projeto para projeto. A partir disso, criei uma <strong>biblioteca modular no Figma</strong>, inspirada nos princípios de Design System, com componentes, seções e modelos reutilizáveis.</p>
+<p>O objetivo era que os designers gastassem menos tempo com decisões estruturais repetitivas e mais tempo com a identidade visual de cada cliente. A biblioteca foi adotada por toda a equipe, ajudou a zerar a fila e continua em uso.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/02-resultados.png" alt="Principais resultados estimados do sistema modular."><figcaption>Principais resultados estimados do sistema modular.</figcaption></figure>
+<ul>
+<li><strong>Minha atuação</strong> (solução interna: UX/UI Designer e idealizadora da solução)</li>
+<li><strong>Áreas</strong> (solução interna: UX/UI Design, DesignOps, Design Modular)</li>
+<li><strong>Equipe</strong> (solução interna: 4 designers)</li>
+<li><strong>Construção</strong> (solução interna: 2 meses para a primeira versão)</li>
+<li><strong>Ferramenta</strong> (solução interna: Figma)</li>
+<li><strong>Status</strong> (solução interna: Implementado e em uso)</li>
+</ul>
+<p><strong>Principais resultados (estimados):</strong></p>
+<ul>
+<li>Aumento de cerca de <strong>50% na produtividade semanal</strong></li>
+<li>Redução de <strong>50% a 75% no tempo de criação</strong> de cada mockup</li>
+<li><strong>4 de 4 designers</strong> usando a biblioteca</li>
+<li>Fila de <strong>150+ projetos zerada em cerca de 3 meses</strong></li>
+<li><strong>Mais diversidade visual</strong> nos projetos seguintes</li>
+</ul>
+<p><em>Os indicadores são estimativas retrospectivas baseadas na experiência da equipe. Não havia registros históricos detalhados para auditoria.</em></p>
+<hr>
+<h2>Contexto: clientes diferentes, estruturas parecidas</h2>
+<p>A empresa produzia sites institucionais para negócios de segmentos variados. A equipe de design tinha quatro pessoas e uma fila de mais de 150 projetos, com novas demandas chegando todos os dias.</p>
+<p>Cada projeto exigia interpretar o briefing, pesquisar o cliente, definir a direção visual e construir o mockup em pouco tempo. Mesmo com marcas diferentes, quase todos os sites precisavam das mesmas peças:</p>
+<ul>
+<li>Apresentação institucional</li>
+<li>Produtos e serviços</li>
+<li>Diferenciais</li>
+<li>Depoimentos</li>
+<li>Chamadas para contato e formulários</li>
+<li>Navegação e rodapé</li>
+</ul>
+<p>Construir essas estruturas do zero a cada projeto consumia o tempo que deveria ir para <strong>tipografia, elementos gráficos e direção de arte</strong>.</p>
+<h2>O desafio: um template ou um sistema?</h2>
+<p>O pedido inicial da minha gestora foi um <strong>mockup base</strong>, um modelo único para servir de ponto de partida.</p>
+<p>Um template fixo resolveria parte da velocidade, mas criaria um problema novo: <strong>sites cada vez mais parecidos entre si</strong>. O desafio, então, não era só produzir mais rápido. Era equilibrar produtividade, personalização e liberdade criativa.</p>
+<p>Propus uma alternativa inspirada em Design Systems: estruturas reutilizáveis que pudessem ser combinadas e adaptadas a cada projeto. Apresentei a ideia à gestora e recebi autonomia para desenvolver e implementar a solução.</p>
+<p><strong>Objetivo principal:</strong> reduzir o esforço com estruturas recorrentes sem comprometer a personalização visual.</p>
+<h2>Quem participava do processo</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/03-stakeholders.png" alt="Mapa de stakeholders, formalizado retrospectivamente."><figcaption>Mapa de stakeholders, formalizado retrospectivamente.</figcaption></figure>
+<p>Os usuários diretos da biblioteca eram os quatro designers da equipe, eu incluída. Em volta estavam:</p>
+<ul>
+<li>a <strong>gestão</strong>, patrocinadora da iniciativa;</li>
+<li>a <strong>implementação</strong>, que conduzia as reuniões com o cliente e montava o briefing;</li>
+<li>o <strong>desenvolvimento</strong>, que transformava os layouts em sites.</li>
+</ul>
+<p>O design não tinha contato com o comercial. Era com os analistas de implementação que tirávamos dúvidas sobre cada projeto.</p>
+<p><em>Mapa formalizado retrospectivamente.</em></p>
+<h2>O processo antes e depois</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/04-antes-depois.png" alt="O fluxo de criação antes e depois da biblioteca."><figcaption>O fluxo de criação antes e depois da biblioteca.</figcaption></figure>
+<p>Antes, cada mockup levava cerca de <strong>dois dias</strong>. Além de construir as estruturas, eu complementava o briefing com pesquisa própria: o site atual do cliente, o Instagram, as referências enviadas.</p>
+<p>Com a biblioteca, a etapa de "construir estruturas" virou <strong>"selecionar e adaptar módulos"</strong>, e o tempo caiu para <strong>meio dia a um dia</strong>. A pesquisa sobre o cliente continuou necessária. O que mudou foi a forma de transformar essas informações em layout.</p>
+<h2>Dois problemas diferentes no mesmo fluxo</h2>
+<p>Analisando um briefing real, percebi que o processo tinha dois tipos de desafio:</p>
+<ul>
+<li><strong>Informacional:</strong> informações incompletas, espalhadas ou com níveis de detalhe diferentes.</li>
+<li><strong>Operacional:</strong> o esforço de transformar essas informações em estruturas visuais.</li>
+</ul>
+<p>O sistema modular foi pensado para atacar o segundo.</p>
+<h2>Pesquisa retrospectiva com a implementação</h2>
+<p>Depois da implementação, fiz uma pesquisa qualitativa com <strong>seis analistas de implementação</strong> para entender melhor como as informações dos clientes eram coletadas. Foi um questionário com perguntas abertas, analisado por agrupamento temático.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/05-pesquisa.png" alt="Os seis temas da pesquisa com a equipe de implementação."><figcaption>Os seis temas da pesquisa com a equipe de implementação.</figcaption></figure>
+<ol>
+<li><strong>Expectativas pouco definidas.</strong> Clientes explicavam o negócio, mas tinham dificuldade de traduzir isso em requisitos visuais.</li>
+<li><strong>Referências insuficientes.</strong> Faltavam exemplos, ou vinham sites de segmentos sem relação com o projeto.</li>
+<li><strong>Informações incompletas.</strong> Serviços, diferenciais e materiais gráficos chegavam faltando.</li>
+<li><strong>Decisões durante a execução.</strong> Ao ver o layout, os clientes descobriam necessidades novas.</li>
+<li><strong>Espera muda expectativas.</strong> Quanto maior o intervalo até a apresentação, maior a chance de mudança de opinião.</li>
+<li><strong>Integração entre equipes.</strong> Pedido por briefings mais estruturados e bibliotecas de referência por segmento.</li>
+</ol>
+<p><strong>Conclusão:</strong> parte das dificuldades do design começava antes, na coleta de informações. A pesquisa reforçou o valor de organizar o repertório visual e revelou oportunidades que o sistema modular, sozinho, não resolve.</p>
+<p><em>Importante: essa pesquisa foi feita depois da criação do sistema, para documentar o contexto. Ela não antecedeu a solução.</em></p>
+<h2>Auditoria dos projetos anteriores</h2>
+<p>Analisei cinco mockups feitos antes do sistema, de segmentos diferentes: veterinário, alimentício e mobiliário industrial. Todos repetiam a mesma espinha dorsal: <strong>header, banner, apresentação, cards de serviços, blocos alternados, depoimentos, CTA e footer</strong>.</p>
+<p>A personalização existia, mas a rotina deixava pouco tempo para explorar tipografia, composições assimétricas, tratamentos gráficos e direção de arte.</p>
+<p>Se várias seções cumpriam a mesma função em projetos diferentes, não fazia sentido reconstruir a lógica delas a cada nova demanda.</p>
+<h2>Matriz CSD</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/06-matriz-csd.png" alt="Matriz CSD: certezas, suposições e dúvidas."><figcaption>Matriz CSD: certezas, suposições e dúvidas.</figcaption></figure>
+<p><em>Formalização retrospectiva das certezas, suposições e dúvidas do projeto.</em></p>
+<h2>Definição do problema</h2>
+<p><strong>Problem statement.</strong> Os designers precisavam entregar muitos projetos personalizados em pouco tempo, mas boa parte do esforço ia para a construção de estruturas recorrentes. Isso limitava a capacidade da equipe e o aprofundamento criativo.</p>
+<p><strong>How Might We.</strong> Como poderíamos acelerar a produção de mockups, reduzindo decisões estruturais repetitivas e preservando a liberdade criativa dos designers e a identidade de cada cliente?</p>
+<p><strong>Hipótese.</strong> Com uma biblioteca de estruturas reutilizáveis e flexíveis, os designers gastariam menos esforço com seções recorrentes e mais tempo com as decisões visuais de cada projeto.</p>
+<ul>
+<li><strong>Velocidade</strong> (criação individual: Menor; template fixo: Alta; sistema modular: Alta)</li>
+<li><strong>Liberdade criativa</strong> (criação individual: Alta; template fixo: Limitada; sistema modular: Alta)</li>
+<li><strong>Personalização</strong> (criação individual: Alta; template fixo: Limitada; sistema modular: Alta)</li>
+<li><strong>Reutilização</strong> (criação individual: Pouco estruturada; template fixo: Alta; sistema modular: Alta)</li>
+<li><strong>Evolução colaborativa</strong> (criação individual: Limitada; template fixo: Limitada; sistema modular: Alta)</li>
+<li><strong>Esforço inicial</strong> (criação individual: Menor; template fixo: Menor; sistema modular: Maior)</li>
+</ul>
+<p><em>Comparação formalizada retrospectivamente para documentar o raciocínio da escolha.</em></p>
+<h2>A solução: uma biblioteca em três níveis</h2>
+<p>A primeira versão levou cerca de <strong>dois meses</strong>, construída em paralelo às demandas normais da empresa. Tudo ficou centralizado num arquivo do Figma chamado <strong>Mockup base</strong>.</p>
+<p>O maior desafio foi a organização. Juntar exemplos de layout não bastava: era preciso uma estrutura que facilitasse encontrar, escolher e adaptar cada peça.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/07-arquitetura.png" alt="A biblioteca em três níveis: componentes, seções e modelos."><figcaption>A biblioteca em três níveis: componentes, seções e modelos.</figcaption></figure>
+<ul>
+<li><strong>Componentes:</strong> botões, cards, navegação, blocos de conteúdo.</li>
+<li><strong>Seções:</strong> famílias para banners, apresentação institucional, serviços, produtos, diferenciais, depoimentos, CTA e contato.</li>
+<li><strong>Modelos:</strong> combinações que servem de ponto de partida, sem composição obrigatória.</li>
+</ul>
+<figure><img src="https://www.samilleleao.net/img/medium/08a-biblioteca-familias.jpg" alt="Arquivo Mockup base. Cada família reúne várias composições para a mesma função."><figcaption>Arquivo Mockup base. Cada família reúne várias composições para a mesma função.</figcaption></figure>
+<figure><img src="https://www.samilleleao.net/img/medium/08b-biblioteca-combinacoes.jpg" alt="Quatro páginas montadas com módulos diferentes da biblioteca."><figcaption>Quatro páginas montadas com módulos diferentes da biblioteca.</figcaption></figure>
+<h3>Uma necessidade, várias composições</h3>
+<p>Um banner podia ter texto com imagem lateral, conteúdo centralizado, imagem de fundo, duas colunas ou formulário. Os serviços podiam virar cards em grid, listas, mosaicos, carrosséis, blocos alternados ou cards com ícones.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/08-reutiliza-personaliza.png" alt="O que se reutiliza e o que se personaliza em cada projeto."><figcaption>O que se reutiliza e o que se personaliza em cada projeto.</figcaption></figure>
+<p><strong>O princípio central: padronizar a estrutura, não a criatividade.</strong></p>
+<h2>Implementação e adoção</h2>
+<p>Depois de pronta, disponibilizei a biblioteca para os outros três designers. No começo <strong>houve resistência</strong>, porque cada pessoa tinha o seu próprio jeito de trabalhar.</p>
+<p>A biblioteca não impunha um processo rígido. Todos podiam escolher, adaptar e <strong>contribuir com novos componentes, seções e modelos</strong>. Depois do período de adaptação, os quatro designers passaram a usar.</p>
+<p>Com as contribuições, o conhecimento deixou de ficar preso em arquivos individuais e virou um repertório coletivo, num ciclo contínuo:</p>
+<p><strong>novo projeto → seleção de estruturas → combinação e personalização → mockup → nova solução encontrada → contribuição para a biblioteca</strong></p>
+<h2>Resultados</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/09-graficos.png" alt="Produtividade e tempo por mockup (estimativas)."><figcaption>Produtividade e tempo por mockup (estimativas).</figcaption></figure>
+<ul>
+<li><strong>Tempo por mockup</strong> (antes: ~2 dias; depois: 0,5 a 1 dia)</li>
+<li><strong>Entregas semanais por designer</strong> (antes: 5; depois: 7,5 (média de 7 a 8))</li>
+<li><strong>Capacidade semanal da equipe</strong> (antes: 20; depois: 30)</li>
+<li><strong>Capacidade mensal projetada</strong> (antes: 80; depois: 120)</li>
+</ul>
+<figure><img src="https://www.samilleleao.net/img/medium/10-fila.png" alt="Da fila de 150+ projetos a zero, em cerca de três meses."><figcaption>Da fila de 150+ projetos a zero, em cerca de três meses.</figcaption></figure>
+<p>A fila de <strong>mais de 150 projetos foi zerada em cerca de três meses</strong>, mesmo com novas demandas entrando. Não houve outras mudanças operacionais relevantes no período. Ainda assim, não dá para isolar estatisticamente a contribuição do sistema.</p>
+<p>A biblioteca <strong>continua em uso</strong>, inclusive depois de mudanças na equipe.</p>
+<h3>Mais diversidade visual</h3>
+<p>Comparei os cinco mockups anteriores com sete feitos depois da biblioteca. A estrutura continuou parecida, mas as soluções visuais ficaram mais variadas: mais exploração tipográfica, recortes e sobreposições de imagem, elementos gráficos integrados à identidade.</p>
+<p>No segmento pet, por exemplo, dois negócios com necessidades parecidas ganharam linguagens bem diferentes: <strong>um temático, com texturas; outro afetivo, com formas orgânicas</strong>.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/11-depois-tres-sites.jpg" alt="Três mockups feitos com o sistema. Mesma espinha dorsal, direções de arte diferentes."><figcaption>Três mockups feitos com o sistema. Mesma espinha dorsal, direções de arte diferentes.</figcaption></figure>
+<p><em>Análise qualitativa por observação. Não houve testes de usabilidade nem medição de conversão.</em></p>
+<h3>Avaliação das hipóteses</h3>
+<ul>
+<li><strong>Reutilizar reduz o tempo de criação</strong> (evidência: De ~2 dias para 0,5–1 dia; avaliação: Sustentada por relato)</li>
+<li><strong>Modularidade aumenta a produtividade</strong> (evidência: +50% semanal estimado; avaliação: Sustentada por relato)</li>
+<li><strong>A personalização é preservada</strong> (evidência: Auditoria de 12 mockups; avaliação: Sustentada qualitativamente)</li>
+<li><strong>A equipe adota a solução</strong> (evidência: 4 de 4 designers; avaliação: Confirmada)</li>
+<li><strong>A biblioteca continua relevante</strong> (evidência: Ainda em uso; avaliação: Confirmada)</li>
+<li><strong>Reduz retrabalho</strong> (evidência: Sem indicadores; avaliação: Não avaliada)</li>
+<li><strong>Aumenta a satisfação dos clientes</strong> (evidência: Sem pesquisa; avaliação: Não avaliada)</li>
+</ul>
+<h2>Limitações</h2>
+<ul>
+<li>Não havia ferramenta que registrasse tempos de criação e entregas, então os números foram reconstruídos com base na experiência.</li>
+<li>Não foi possível ouvir hoje os outros três designers, que já não fazem parte da equipe.</li>
+<li>A pesquisa com a implementação foi feita depois e não mediu a satisfação com a biblioteca.</li>
+<li>A auditoria visual mostra diferenças, mas não comprova ganhos de usabilidade, acessibilidade ou conversão.</li>
+</ul>
+<p>Essas limitações reforçam um aprendizado: <strong>definir indicadores desde o início</strong>.</p>
+<h2>Aprendizados</h2>
+<ul>
+<li><strong>Organização da informação.</strong> Juntar referências não basta. A forma de classificar o conteúdo decide se ele é útil.</li>
+<li><strong>Gestão da mudança.</strong> Adoção é sobre hábitos. A ferramenta precisa respeitar a autonomia de quem usa.</li>
+<li><strong>Colaboração.</strong> Com contribuições, a biblioteca deixou de depender só de quem a criou.</li>
+<li><strong>Eficiência e criatividade.</strong> Padronizar a estrutura libera esforço para o que realmente diferencia cada projeto.</li>
+</ul>
+<h2>O que eu faria diferente hoje</h2>
+<ul>
+<li>Entrevistar designers e analistas <strong>antes</strong> de construir.</li>
+<li>Começar com poucos módulos e validar o uso antes de ampliar.</li>
+<li>Medir desde o início: tempo por mockup, entregas, uso dos módulos, alterações e satisfação.</li>
+<li>Definir governança: nomenclatura, documentação e critérios para incluir novas peças.</li>
+<li>Usar IA para analisar briefings e sugerir estruturas, sem tirar a decisão do designer.</li>
+</ul>
+<h2>Próximo capítulo: Modu Studio</h2>
+<p>Esses aprendizados deram origem a um projeto autoral em desenvolvimento, o <strong>Modu Studio</strong>. Enquanto a biblioteca original era organizada manualmente no Figma, o Modu Studio explora o uso de IA para centralizar informações do cliente, analisar referências e gerar alternativas de wireframe.</p>
+<p>O objetivo continua o mesmo: menos esforço repetitivo, mais autonomia criativa.</p>
+<h2>Conclusão</h2>
+<p>O que começou como o pedido de um mockup base virou uma biblioteca colaborativa, adotada por toda a equipe e incorporada à rotina de produção.</p>
+<p>Meu principal aprendizado: <strong>eficiência e criatividade não precisam ser opostas</strong>. Quando as estruturas recorrentes são organizadas de forma flexível, os designers podem se concentrar no que realmente diferencia cada projeto.</p>
+<p><strong>Padronizar a estrutura não significa padronizar a criatividade. Significa criar espaço para que ela aconteça.</strong></p>
+<hr>
+<p><em>Samille Leão · UX/UI Designer · Portfólio: <a href="https://www.samilleleao.net">samilleleao.net</a></em></p>
+</article>
+</body>
+</html>
