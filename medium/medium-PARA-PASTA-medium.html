@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design em escala: como um sistema modular transformou a produção de sites institucionais</title>
+<meta name="description" content="Uma iniciativa de UX/UI Design e DesignOps para aumentar a produtividade, preservar a liberdade criativa e transformar o processo de produção de uma equipe de design.">
+<meta name="author" content="Samille Leão">
+<meta property="og:title" content="Design em escala: como um sistema modular transformou a produção de sites institucionais">
+<meta property="og:image" content="https://www.samilleleao.net/img/medium/01-capa.png">
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#6b6b6b;--line:#e6e6e6;--accent:#0E6461}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#e8e8e8;--muted:#9a9a9a;--line:#2a2a2a;--accent:#5CCFC3}}
+body{margin:0;background:var(--bg);color:var(--fg);font:20px/1.6 Georgia,"Times New Roman",serif;padding:48px max(16px,env(safe-area-inset-left)) 80px}
+article{max-width:700px;margin:auto}
+h1,h2,h3{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.2;letter-spacing:-.01em}
+h1{font-size:40px;margin:0 0 12px}h2{font-size:28px;margin:48px 0 8px}h3{font-size:22px;margin:32px 0 4px}
+figure{margin:32px 0}img{max-width:100%;height:auto;display:block;margin:auto}
+figcaption{font:14px/1.4 -apple-system,"Segoe UI",sans-serif;color:var(--muted);text-align:center;margin-top:10px}
+blockquote{border-left:3px solid var(--accent);margin:24px 0;padding-left:20px;font-style:italic}
+hr{border:0;text-align:center;margin:40px 0}hr::before{content:"· · ·";color:var(--muted);letter-spacing:.5em}
+a{color:var(--accent)}
+.note{font:15px/1.5 -apple-system,"Segoe UI",sans-serif;background:#f3f7f6;color:#334;border-radius:10px;padding:14px 18px;margin-bottom:32px}
+@media (prefers-color-scheme:dark){.note{background:#1c2624;color:#cfe}}
+</style>
+</head>
+<body>
+<article>
+<h1>Design em escala: como um sistema modular transformou a produção de sites institucionais</h1>
+<p><em>Uma iniciativa de UX/UI Design e DesignOps para aumentar a produtividade, preservar a liberdade criativa e transformar o processo de produção de uma equipe de design.</em></p>
+<figure><img src="https://www.samilleleao.net/img/medium/01-capa.png" alt="Mesma estrutura, identidades diferentes."><figcaption>Mesma estrutura, identidades diferentes.</figcaption></figure>
+<h2>Visão geral</h2>
+<p>Como acelerar a produção de sites institucionais sem comprometer a identidade visual e as particularidades de cada cliente?</p>
+<p>Esse foi o desafio que recebi em um cenário empresarial marcado pela alta demanda de projetos, prazos reduzidos e uma fila de mais de 150 sites pendentes.</p>
+<p>A partir da investigação do processo de trabalho, da identificação das dificuldades enfrentadas pelos profissionais e da análise de estruturas recorrentes nos projetos, desenvolvi uma biblioteca modular de layouts inspirada nos princípios de Design System.</p>
+<p>A solução permitiu que os designers reutilizassem estruturas, combinassem diferentes possibilidades de composição e direcionassem mais tempo para decisões criativas e estratégicas.</p>
+<p>Adotado por toda a equipe, o sistema contribuiu para a aceleração da produção, a eliminação da fila de pendências e a evolução visual dos projetos.</p>
+<h3>Informações do projeto</h3>
+<ul>
+<li><strong><strong>Tipo de projeto</strong></strong> → Solução interna empresarial</li>
+<li><strong><strong>Minha atuação</strong></strong> → UX/UI Designer e idealizadora da solução</li>
+<li><strong><strong>Áreas</strong></strong> → UX/UI Design, DesignOps e Design Modular</li>
+<li><strong><strong>Equipe</strong></strong> → Quatro designers</li>
+<li><strong><strong>Stakeholders</strong></strong> → Gestão, implementação, design e desenvolvimento</li>
+<li><strong><strong>Usuários diretos</strong></strong> → Designers de sites institucionais</li>
+<li><strong><strong>Ferramenta</strong></strong> → Figma</li>
+<li><strong><strong>Desenvolvimento</strong></strong> → Dois meses para a primeira versão</li>
+<li><strong><strong>Status</strong></strong> → Implementado e em utilização</li>
+</ul>
+<h3>Principais resultados</h3>
+<figure><img src="https://www.samilleleao.net/img/medium/02-resultados.png" alt="Indicadores operacionais estimados a partir da experiência profissional."><figcaption>Indicadores operacionais estimados a partir da experiência profissional.</figcaption></figure>
+<ul>
+<li><strong>+50%</strong> de aumento estimado na produtividade semanal por designer.</li>
+<li><strong>50% a 75%</strong> de redução estimada no tempo de criação dos mockups.</li>
+<li><strong>100%</strong> de adoção pela equipe original de design.</li>
+<li><strong>150+ projetos pendentes</strong> eliminados da fila em três meses.</li>
+<li>Maior diversidade visual observada nos projetos posteriores.</li>
+<li>Continuidade da utilização da solução.</li>
+</ul>
+<p><em>Os indicadores operacionais são estimativas baseadas na experiência profissional, uma vez que não estão disponíveis registros históricos detalhados de produção.</em></p>
+<figure><img src="https://www.samilleleao.net/img/medium/02b-jornada.png" alt="A jornada do projeto, do desafio à evolução."><figcaption>A jornada do projeto, do desafio à evolução.</figcaption></figure>
+<hr>
+<h2>Contexto do negócio</h2>
+<p>A empresa atuava na produção de sites institucionais para clientes de diferentes segmentos, atendendo negócios com necessidades, posicionamentos e identidades visuais distintas.</p>
+<p>Naquele período, a equipe de design era composta por quatro profissionais e enfrentava uma fila superior a 150 projetos pendentes, além da entrada contínua de novas demandas.</p>
+<p>Cada projeto exigia que os designers interpretassem os briefings, pesquisassem informações complementares, analisassem referências, definissem a direção visual e desenvolvessem os mockups.</p>
+<p>Apesar das diferenças entre os clientes, muitos sites compartilhavam necessidades estruturais semelhantes:</p>
+<ul>
+<li>Apresentação institucional.</li>
+<li>Exposição de produtos e serviços.</li>
+<li>Comunicação de diferenciais.</li>
+<li>Apresentação de depoimentos.</li>
+<li>Chamadas para contato.</li>
+<li>Formulários.</li>
+<li>Navegação.</li>
+<li>Rodapé.</li>
+</ul>
+<p>Parte significativa do tempo de produção era dedicada à construção dessas estruturas recorrentes. Essa dinâmica dificultava o atendimento à demanda e reduzia a disponibilidade dos designers para explorar com maior profundidade a identidade visual dos clientes.</p>
+<p>Diante desse cenário, minha gestora me apresentou o desafio de desenvolver um mockup base que pudesse acelerar a produção da equipe.</p>
+<hr>
+<h2>O desafio</h2>
+<p>A solicitação inicial era criar um modelo de mockup que servisse como ponto de partida para novos projetos.</p>
+<p>Entretanto, a utilização de um único template poderia resolver parte do problema de produtividade e, ao mesmo tempo, criar uma nova limitação: a homogeneização visual dos sites.</p>
+<p>Como atendíamos clientes de diferentes segmentos, era necessário preservar a possibilidade de desenvolver interfaces coerentes com as características de cada negócio.</p>
+<p>O desafio não consistia apenas em produzir mais rapidamente, mas em encontrar uma solução que equilibrasse três necessidades:</p>
+<ul>
+<li>Eficiência operacional.</li>
+<li>Liberdade criativa.</li>
+<li>Personalização visual.</li>
+</ul>
+<p><strong>Objetivo do projeto:</strong> desenvolver uma solução reutilizável e escalável que reduzisse o esforço dedicado à construção de estruturas recorrentes, ampliasse a capacidade produtiva da equipe e preservasse a individualidade visual dos clientes.</p>
+<hr>
+<h2>Mapeamento de stakeholders</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/03-stakeholders.png" alt="Relação dos stakeholders com a solução interna."><figcaption>Relação dos stakeholders com a solução interna.</figcaption></figure>
+<ul>
+<li><strong>Gestão</strong> (responsabilidade: Acompanhamento das demandas e da produtividade; relação com o projeto: Solicitante e patrocinadora)</li>
+<li><strong>Comercial</strong> (responsabilidade: Venda dos projetos; relação com o projeto: Participação indireta)</li>
+<li><strong>Implementação</strong> (responsabilidade: Reuniões com clientes e elaboração dos briefings; relação com o projeto: Fornecedora de informações)</li>
+<li><strong>Designers</strong> (responsabilidade: Interpretação dos briefings e criação dos mockups; relação com o projeto: Usuários diretos)</li>
+<li><strong>Desenvolvimento</strong> (responsabilidade: Transformação dos layouts em sites funcionais; relação com o projeto: Stakeholder posterior)</li>
+<li><strong>Clientes</strong> (responsabilidade: Fornecimento de informações, materiais e expectativas; relação com o projeto: Beneficiários indiretos)</li>
+<li><strong>Visitantes dos sites</strong> (responsabilidade: Utilização dos sites publicados; relação com o projeto: Usuários finais dos sites)</li>
+</ul>
+<p>Os principais usuários eram os quatro designers responsáveis pela criação dos mockups, incluindo eu mesma. A biblioteca não seria utilizada diretamente pelos clientes: eles seriam beneficiados indiretamente, recebendo projetos mais personalizados e produzidos com maior agilidade.</p>
+<p>Na estrutura da empresa, a equipe de design não tinha contato direto com o comercial. Após a venda, a equipe de implementação assumia o relacionamento com o cliente, realizando reuniões, coletando materiais, analisando referências e elaborando o briefing. Era com os analistas de implementação que os designers esclareciam dúvidas sobre os projetos.</p>
+<hr>
+<h2>Discovery: entendendo o problema</h2>
+<p>Antes de desenvolver a solução, busquei compreender as dificuldades enfrentadas pelos profissionais envolvidos no processo, a partir de duas perspectivas complementares:</p>
+<ul>
+<li><strong>Implementação:</strong> responsável por transformar as expectativas dos clientes em informações e direcionamentos para a produção.</li>
+<li><strong>Design:</strong> responsável por interpretar essas informações e transformá-las em interfaces.</li>
+</ul>
+<p>A investigação reuniu:</p>
+<ul>
+<li>Conversas e entrevistas com profissionais envolvidos no processo.</li>
+<li>Análise dos briefings utilizados pela equipe.</li>
+<li>Observação da rotina operacional.</li>
+<li>Curadoria de referências visuais.</li>
+<li>Identificação de padrões estruturais nos mockups.</li>
+</ul>
+<figure><img src="https://www.samilleleao.net/img/medium/04-discovery.png" alt="O que implementação e designers relataram, e a oportunidade identificada."><figcaption>O que implementação e designers relataram, e a oportunidade identificada.</figcaption></figure>
+<h3>Pesquisa com a equipe de implementação</h3>
+<p>A investigação considerou a perspectiva de seis analistas de implementação, com o objetivo de compreender a coleta de informações, o alinhamento com os clientes, a definição de referências, a origem das alterações e a comunicação com o design.</p>
+<p>Principais dificuldades identificadas:</p>
+<ul>
+<li><strong>Dificuldade de traduzir expectativas em requisitos.</strong> Nem sempre os clientes conseguiam transformar ideias em direcionamentos claros.</li>
+<li><strong>Referências visuais pouco definidas.</strong> Ausência de referências ou exemplos pouco compatíveis com o projeto.</li>
+<li><strong>Informações incompletas.</strong> Conteúdos institucionais, materiais gráficos e informações sobre serviços exigiam complementações.</li>
+<li><strong>Mudanças de expectativa.</strong> Ao visualizar uma proposta, alguns clientes identificavam novas necessidades.</li>
+<li><strong>Integração entre equipes.</strong> A comunicação entre implementação e design era uma oportunidade de melhoria.</li>
+</ul>
+<p>Nem todos esses problemas poderiam ser resolvidos por uma biblioteca modular. Foi necessário delimitar o escopo para atuar principalmente sobre a eficiência da produção dos layouts.</p>
+<h3>Pesquisa com os designers</h3>
+<p>Como os designers seriam os usuários diretos, compreender suas dificuldades era fundamental para definir uma solução que se integrasse à rotina.</p>
+<p>Principais dores identificadas:</p>
+<ul>
+<li><strong>Pesquisa complementar</strong> em sites, redes sociais e referências de mercado.</li>
+<li><strong>Organização do conteúdo</strong> recebido em uma estrutura visual.</li>
+<li><strong>Referências dispersas</strong>, sem um repertório centralizado.</li>
+<li><strong>Decisões estruturais repetitivas</strong>, mesmo em segmentos diferentes.</li>
+<li><strong>Prazos reduzidos</strong> para explorar composições e identidade visual.</li>
+<li><strong>Retrabalho</strong> com alterações de conteúdo e de direcionamento.</li>
+<li><strong>Métodos individuais</strong> de pesquisa, organização e construção.</li>
+</ul>
+<p>A solução precisava oferecer agilidade, facilidade para localizar estruturas, organização do repertório, reaproveitamento, flexibilidade, autonomia para personalizar e liberdade para contribuir. Precisava funcionar como apoio ao processo criativo, e não como uma ferramenta que determinasse a aparência final dos projetos.</p>
+<hr>
+<h2>O briefing na prática</h2>
+<p>Os documentos de alinhamento visual traziam sites de referência, estrutura de navegação, direcionamento de estilo, preferências de cores, materiais do cliente e orientações sobre páginas e seções.</p>
+<p>Ainda assim, era necessário interpretar o conteúdo e investigar a marca. Ao receber um projeto, eu consultava o site existente do cliente e suas redes sociais, especialmente o Instagram, para entender identidade visual, linguagem, fotografias, produtos e serviços, elementos gráficos e posicionamento.</p>
+<p>Essa análise permitiu distinguir dois grupos de problemas:</p>
+<ul>
+<li><strong>Problemas informacionais:</strong> relacionados à coleta, organização e clareza das informações fornecidas.</li>
+<li><strong>Problemas operacionais:</strong> relacionados ao esforço de transformar essas informações em estruturas visuais e mockups.</li>
+</ul>
+<p>O sistema modular foi direcionado principalmente aos problemas operacionais. Ele não pretendia eliminar a pesquisa ou substituir o briefing, mas tornar mais eficiente a etapa de construção dos layouts.</p>
+<hr>
+<h2>O processo antes: AS IS</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/05-antes-depois.png" alt="A jornada do designer antes e depois da biblioteca."><figcaption>A jornada do designer antes e depois da biblioteca.</figcaption></figure>
+<ul>
+<li><strong>Recebimento</strong> (atividade: Receber o briefing; dificuldade: Diferentes níveis de detalhamento)</li>
+<li><strong>Interpretação</strong> (atividade: Compreender as necessidades; dificuldade: Organizar e priorizar conteúdos)</li>
+<li><strong>Pesquisa</strong> (atividade: Site, redes sociais e referências; dificuldade: Informações dispersas)</li>
+<li><strong>Alinhamento</strong> (atividade: Esclarecer dúvidas com implementação; dificuldade: Dependência de complementações)</li>
+<li><strong>Direção visual</strong> (atividade: Definir linguagem gráfica; dificuldade: Tempo limitado)</li>
+<li><strong>Estruturação</strong> (atividade: Construir as seções; dificuldade: Repetição de decisões)</li>
+<li><strong>Personalização</strong> (atividade: Aplicar a identidade visual; dificuldade: Menos tempo para exploração)</li>
+<li><strong>Entrega</strong> (atividade: Finalizar o mockup; dificuldade: Pressão da fila)</li>
+</ul>
+<p>A construção das estruturas era a etapa que poderia ser otimizada sem eliminar a interpretação do briefing nem comprometer a direção visual.</p>
+<hr>
+<h2>Curadoria visual e identificação de padrões</h2>
+<p>Entre os projetos anteriores à solução, selecionei cinco exemplos para documentar a recorrência estrutural: duas clínicas veterinárias, um centro de reabilitação veterinária, uma marca de polpas e açaí e uma indústria de mobiliário.</p>
+<p>Esses projetos tinham identidades diferentes, mas compartilhavam as mesmas famílias estruturais:</p>
+<ul>
+<li><strong>Header</strong> → Identificação e navegação</li>
+<li><strong>Hero</strong> → Apresentação inicial da proposta</li>
+<li><strong>Sobre nós</strong> → Comunicação institucional</li>
+<li><strong>Serviços e produtos</strong> → Exposição das soluções</li>
+<li><strong>Blocos alternados</strong> → Distribuição de informações e imagens</li>
+<li><strong>Depoimentos</strong> → Credibilidade</li>
+<li><strong>CTA e contato</strong> → Incentivo à ação</li>
+<li><strong>Footer</strong> → Informações complementares</li>
+</ul>
+<p>Uma empresa veterinária, uma indústria e uma empresa de alimentos podiam ter necessidades estruturais semelhantes, mesmo com linguagens visuais completamente diferentes. <strong>A função de uma seção podia ser reutilizada sem determinar sua aparência final.</strong></p>
+<hr>
+<h2>Síntese das descobertas</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/06-insights.png" alt="Seis descobertas que orientaram a solução."><figcaption>Seis descobertas que orientaram a solução.</figcaption></figure>
+<ol>
+<li><strong>O problema não estava apenas na execução visual.</strong> A produção começava antes do Figma. <em>Oportunidade: facilitar a transformação dos conteúdos em estruturas visuais.</em></li>
+<li><strong>Clientes diferentes compartilhavam necessidades estruturais.</strong> <em>Oportunidade: organizar estruturas reutilizáveis por finalidade.</em></li>
+<li><strong>Pesquisa e construção competiam pelo mesmo tempo.</strong> <em>Oportunidade: reduzir o esforço de construção para ampliar a exploração visual.</em></li>
+<li><strong>Centralizar poderia melhorar o reaproveitamento.</strong> <em>Oportunidade: criar uma biblioteca compartilhada.</em></li>
+<li><strong>A autonomia era essencial para a adoção.</strong> <em>Oportunidade: uma solução flexível, sem template obrigatório.</em></li>
+<li><strong>A produtividade era um problema coletivo.</strong> <em>Oportunidade: uma solução usada e enriquecida por toda a equipe.</em></li>
+</ol>
+<hr>
+<h2>Matriz CSD</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/07-matriz-csd.png" alt="Certezas, suposições e dúvidas relacionadas à concepção da solução."><figcaption>Certezas, suposições e dúvidas relacionadas à concepção da solução.</figcaption></figure>
+<hr>
+<h2>Definição do problema</h2>
+<p><strong>Problem statement.</strong> Os designers precisavam atender uma alta demanda de projetos personalizados em prazos reduzidos. Parte significativa do esforço ia para a interpretação de conteúdos e a construção de estruturas recorrentes, reduzindo o tempo para direção de arte, identidade visual e personalização.</p>
+<p><strong>How Might We.</strong> Como poderíamos acelerar a produção de mockups de sites institucionais, reduzindo decisões estruturais repetitivas e preservando a liberdade criativa dos designers e a individualidade visual de cada cliente?</p>
+<p><strong>Hipótese central.</strong> Se disponibilizássemos uma biblioteca de estruturas reutilizáveis, organizadas e flexíveis, os designers poderiam reduzir o esforço com seções recorrentes e direcionar mais tempo para decisões visuais específicas de cada projeto.</p>
+<p><strong>Critérios de sucesso:</strong></p>
+<ul>
+<li>Redução do tempo de construção dos mockups.</li>
+<li>Aumento da capacidade produtiva.</li>
+<li>Adoção pela equipe.</li>
+<li>Preservação da diversidade visual.</li>
+<li>Possibilidade de evolução colaborativa.</li>
+<li>Contribuição para a redução da fila de pendências.</li>
+</ul>
+<hr>
+<h2>Ideação: por que um sistema modular?</h2>
+<p>A solicitação inicial era um mockup base. A partir das necessidades identificadas, percebi que uma estrutura única não atenderia à diversidade dos projetos. Busquei inspiração nos princípios dos Design Systems: reutilização, organização, consistência, modularidade e escalabilidade.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/08-alternativas.png" alt="O sistema modular foi escolhido por equilibrar reutilização, produtividade e personalização."><figcaption>O sistema modular foi escolhido por equilibrar reutilização, produtividade e personalização.</figcaption></figure>
+<ul>
+<li><strong>Criação individual:</strong> preservava a liberdade criativa, mas mantinha o esforço repetitivo.</li>
+<li><strong>Template fixo:</strong> aceleraria a produção, mas restringiria as composições.</li>
+<li><strong>Sistema modular:</strong> reutilizar a lógica estrutural sem estabelecer uma aparência obrigatória.</li>
+</ul>
+<p>Apresentei a proposta à minha gestora e recebi autonomia para desenvolver e implementar a solução.</p>
+<h3>Rastreabilidade das decisões</h3>
+<ul>
+<li><strong>Reduzir decisões repetitivas</strong> (decisão de design: Criar estruturas reutilizáveis; benefício esperado: Menor esforço de construção)</li>
+<li><strong>Organizar o repertório visual</strong> (decisão de design: Centralizar a biblioteca no Figma; benefício esperado: Facilidade de acesso)</li>
+<li><strong>Facilitar a localização</strong> (decisão de design: Separar componentes, seções e modelos; benefício esperado: Agilidade na seleção)</li>
+<li><strong>Atender diferentes segmentos</strong> (decisão de design: Criar variações de composição; benefício esperado: Flexibilidade)</li>
+<li><strong>Preservar a identidade visual</strong> (decisão de design: Permitir personalização dos módulos; benefício esperado: Diferenciação)</li>
+<li><strong>Respeitar métodos individuais</strong> (decisão de design: Evitar estruturas obrigatórias; benefício esperado: Autonomia)</li>
+<li><strong>Compartilhar conhecimento</strong> (decisão de design: Disponibilizar o arquivo para a equipe; benefício esperado: Colaboração)</li>
+<li><strong>Ampliar o repertório</strong> (decisão de design: Permitir novas contribuições; benefício esperado: Evolução contínua)</li>
+</ul>
+<hr>
+<h2>Desenvolvimento e arquitetura</h2>
+<p>A primeira versão levou cerca de dois meses, construída em paralelo às demandas regulares. O maior desafio foi organizar o conteúdo: não bastava reunir exemplos de layouts, era preciso que os designers encontrassem rapidamente soluções compatíveis com seus projetos.</p>
+<p>A solução foi centralizada em um arquivo compartilhado do Figma, chamado <strong>Mockup base</strong>, organizado em três níveis.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/09-arquitetura.png" alt="Componentes → Seções → Modelos → Personalização → Mockup final."><figcaption>Componentes → Seções → Modelos → Personalização → Mockup final.</figcaption></figure>
+<ul>
+<li><strong>Componentes:</strong> unidades de apoio reutilizáveis.</li>
+<li><strong>Seções:</strong> banners, apresentações institucionais, serviços, produtos, diferenciais, depoimentos, chamadas para ação e contato, cada família com várias composições.</li>
+<li><strong>Modelos:</strong> combinações que funcionam como ponto de partida, sem obrigatoriedade de reprodução.</li>
+</ul>
+<figure><img src="https://www.samilleleao.net/img/medium/08a-biblioteca-familias.jpg" alt="Arquivo Mockup base. Cada família reúne várias composições para a mesma função."><figcaption>Arquivo Mockup base. Cada família reúne várias composições para a mesma função.</figcaption></figure>
+<figure><img src="https://www.samilleleao.net/img/medium/08b-biblioteca-combinacoes.jpg" alt="Exemplos de combinação: quatro páginas montadas com módulos diferentes."><figcaption>Exemplos de combinação: quatro páginas montadas com módulos diferentes.</figcaption></figure>
+<p>A solução foi inspirada nos princípios de Design System, mas seu propósito era funcionar como uma biblioteca modular de layouts, e não como um sistema completo de identidade visual de um único produto.</p>
+<hr>
+<h2>Modularidade na prática</h2>
+<p>Um banner podia ter texto à esquerda e imagem à direita, conteúdo centralizado, imagem de fundo, duas colunas ou formulário. Serviços e produtos podiam virar cards em grid, listas, mosaicos, carrosséis, blocos alternados ou cards com ícones. Depoimentos podiam ser organizados em cards, grades ou carrosséis.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/10-reutiliza-personaliza.png" alt="O que se reutiliza e o que se personaliza em cada projeto."><figcaption>O que se reutiliza e o que se personaliza em cada projeto.</figcaption></figure>
+<p><strong>O princípio central da solução era padronizar a estrutura, não a criatividade.</strong></p>
+<hr>
+<h2>Implementação e gestão da mudança</h2>
+<p>Disponibilizei o arquivo para os outros três designers. Inicialmente houve resistência, pois cada pessoa já tinha seu próprio processo criativo. O desafio era demonstrar que a ferramenta facilitava o trabalho sem retirar autonomia.</p>
+<p>Por isso, a biblioteca foi disponibilizada com liberdade de uso: os designers podiam selecionar, combinar, adaptar e acrescentar componentes, seções e modelos. Após o período de adaptação, a solução foi bem aceita e passou a ser usada por toda a equipe, com <strong>100% de adoção</strong>.</p>
+<p>A biblioteca não dependia exclusivamente de mim para evoluir:</p>
+<p><strong>Novo projeto → Seleção de módulos → Personalização → Mockup → Novas soluções → Contribuição para a biblioteca.</strong></p>
+<h3>Novo fluxo: TO BE</h3>
+<p>A pesquisa complementar e a interpretação do briefing continuaram necessárias. A principal transformação estava na forma de converter essas informações em layouts: de construir estruturas para <strong>selecionar e combinar módulos</strong>.</p>
+<ul>
+<li><strong>Construção recorrente de estruturas</strong> → Seleção e adaptação de módulos</li>
+<li><strong>Repertório individual</strong> → Biblioteca compartilhada</li>
+<li><strong>Referências dispersas</strong> → Estruturas centralizadas</li>
+<li><strong>Menos tempo para direção de arte</strong> → Mais exploração visual</li>
+<li><strong>Conhecimento concentrado em projetos</strong> → Repertório coletivo</li>
+</ul>
+<hr>
+<h2>Aplicação em projetos reais</h2>
+<p>Para documentar a aplicação, selecionei sete mockups desenvolvidos após a implementação.</p>
+<figure><img src="https://www.samilleleao.net/img/medium/11-depois-tres-sites.jpg" alt="Empresa de serviços terceirizados, clínica de nutrologia e creche e hotel para cães: mesma espinha dorsal, direções de arte diferentes."><figcaption>Empresa de serviços terceirizados, clínica de nutrologia e creche e hotel para cães: mesma espinha dorsal, direções de arte diferentes.</figcaption></figure>
+<ul>
+<li><strong>Empresa de serviços terceirizados:</strong> serviços em mosaico, combinando imagens e blocos de conteúdo numa linguagem institucional.</li>
+<li><strong>Marca de produtos:</strong> elementos gráficos do segmento, imagens de produtos e cores marcantes da marca.</li>
+<li><strong>Espaço pet temático:</strong> linguagem temática, com texturas, ilustrações e formas orgânicas.</li>
+<li><strong>Clínica de nutrologia:</strong> formas orgânicas e tratamentos fotográficos.</li>
+<li><strong>Creche e hotel para cães:</strong> abordagem afetiva, com recortes de imagem e elementos do universo pet.</li>
+<li><strong>Marca de estojos:</strong> sobreposições e composições fotográficas dos produtos.</li>
+<li><strong>Empresa da área da saúde:</strong> estrutura institucional com cards e tratamento de imagem coerente com a marca.</li>
+</ul>
+<h3>Evolução visual</h3>
+<ul>
+<li><strong>Identidade visual</strong> (antes: Aplicação mais concentrada; depois: Maior integração à composição)</li>
+<li><strong>Tipografia</strong> (antes: Menor exploração; depois: Maior diversidade)</li>
+<li><strong>Imagens</strong> (antes: Tratamentos convencionais; depois: Recortes e sobreposições)</li>
+<li><strong>Composição</strong> (antes: Estruturas convencionais; depois: Maior variedade)</li>
+<li><strong>Direção de arte</strong> (antes: Limitada pelo tempo; depois: Maior aprofundamento)</li>
+</ul>
+<p>Os projetos do segmento pet mostram como necessidades próximas podem receber soluções visuais distintas: o espaço temático seguiu uma linguagem com texturas e a creche e hotel para cães, uma abordagem afetiva e orgânica. <strong>A modularidade não exige a repetição da aparência final.</strong></p>
+<p><em>A auditoria visual é qualitativa. Os projetos têm briefings diferentes e não constituem uma comparação controlada de usabilidade ou desempenho.</em></p>
+<hr>
+<h2>Resultados e impacto</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/12-graficos.png" alt="Produtividade e tempo por mockup (estimativas)."><figcaption>Produtividade e tempo por mockup (estimativas).</figcaption></figure>
+<p>O tempo de criação de um mockup, estimado em cerca de dois dias, passou para meio dia a um dia, conforme a complexidade: uma redução estimada entre 50% e 75%. O volume semanal por designer passou de cerca de cinco para uma média de sete a oito mockups.</p>
+<ul>
+<li><strong>Entregas semanais por designer</strong> (antes: 5; depois: 7,5)</li>
+<li><strong>Capacidade semanal da equipe</strong> (antes: 20; depois: 30)</li>
+<li><strong>Capacidade mensal projetada</strong> (antes: 80; depois: 120)</li>
+</ul>
+<p><em>As projeções consideram quatro designers e meses de quatro semanas e não representam registros efetivos de todas as entregas.</em></p>
+<figure><img src="https://www.samilleleao.net/img/medium/13-fila.png" alt="Da fila de 150+ projetos a zero, em cerca de três meses."><figcaption>Da fila de 150+ projetos a zero, em cerca de três meses.</figcaption></figure>
+<p>Em cerca de três meses, zeramos a fila de mais de 150 projetos, mesmo com novas demandas chegando. Não houve outras mudanças operacionais relevantes identificadas por mim no período. Embora não seja possível isolar estatisticamente a contribuição da biblioteca, a experiência operacional indica que ela contribuiu significativamente.</p>
+<p>Mesmo após mudanças na equipe, o sistema permaneceu relevante. Continuo usando a biblioteca como apoio à produção dos mockups.</p>
+<h3>Avaliação das hipóteses</h3>
+<ul>
+<li><strong>A reutilização reduziria o tempo de criação</strong> (evidência: De dois dias para meio dia a um dia; avaliação: Sustentada por relato)</li>
+<li><strong>A modularidade aumentaria a produtividade</strong> (evidência: Crescimento semanal estimado de 50%; avaliação: Sustentada por relato)</li>
+<li><strong>A personalização seria preservada</strong> (evidência: Comparação de 12 mockups; avaliação: Sustentada qualitativamente)</li>
+<li><strong>A equipe adotaria a solução</strong> (evidência: Uso pelos quatro designers; avaliação: Confirmada por relato)</li>
+<li><strong>A biblioteca evoluiria coletivamente</strong> (evidência: Liberdade de contribuição; avaliação: Confirmada por relato)</li>
+<li><strong>A solução permaneceria relevante</strong> (evidência: Uso contínuo; avaliação: Confirmada por relato)</li>
+<li><strong>O retrabalho seria reduzido</strong> (evidência: Sem indicadores específicos; avaliação: Não mensurada)</li>
+<li><strong>A satisfação dos clientes aumentaria</strong> (evidência: Sem pesquisa de satisfação; avaliação: Não mensurada)</li>
+</ul>
+<hr>
+<h2>Valor gerado</h2>
+<figure><img src="https://www.samilleleao.net/img/medium/14-valor.png" alt="Valor para a empresa, para os designers e para os clientes."><figcaption>Valor para a empresa, para os designers e para os clientes.</figcaption></figure>
+<p><em>Os benefícios para os clientes são consequências esperadas da melhoria operacional, não resultados medidos por pesquisas de satisfação.</em></p>
+<hr>
+<h2>Limitações da avaliação</h2>
+<ul>
+<li>Não havia ferramenta que registrasse tempos de criação e entregas individuais, então os indicadores são estimativas.</li>
+<li>Não foi possível fazer uma nova avaliação com os outros três designers, que não integram mais a equipe.</li>
+<li>A comparação dos mockups não comprova ganhos de usabilidade, acessibilidade ou conversão.</li>
+<li>Os dados não permitem estabelecer uma relação causal isolada entre o sistema e a eliminação da fila.</li>
+</ul>
+<hr>
+<h2>Desafios e aprendizados</h2>
+<ul>
+<li><strong>Organização da informação.</strong> A utilidade de uma biblioteca depende de como os elementos são classificados e apresentados, não da quantidade.</li>
+<li><strong>Gestão da mudança.</strong> Cada profissional tinha seu método. A biblioteca precisava trazer benefícios perceptíveis sem impor um jeito único de trabalhar.</li>
+<li><strong>Colaboração.</strong> A liberdade de contribuição transformou uma iniciativa individual em um recurso coletivo.</li>
+<li><strong>Autonomia e responsabilidade.</strong> Desenvolver a solução em paralelo às demandas exigiu organização e priorização.</li>
+<li><strong>Eficiência e criatividade.</strong> Reutilizar estruturas recorrentes direciona o esforço para o que realmente diferencia cada projeto.</li>
+<li><strong>Mensuração.</strong> Acompanhar indicadores desde o início permite avaliar o impacto com mais precisão.</li>
+</ul>
+<h2>O que faria diferente hoje</h2>
+<ul>
+<li><strong>Discovery mais formal:</strong> documentar entrevistas, comportamentos, necessidades e critérios de sucesso.</li>
+<li><strong>Validação progressiva:</strong> começar com poucas estruturas prioritárias e acompanhar o uso antes de ampliar.</li>
+<li><strong>Medição desde o início:</strong> tempo por mockup, entregas semanais, uso dos módulos, tempo de pesquisa, alterações, satisfação dos designers e tempo entre briefing e apresentação.</li>
+<li><strong>Governança:</strong> critérios de organização, nomenclatura, documentação e inclusão de novas estruturas.</li>
+<li><strong>Inteligência artificial:</strong> automatizar a análise de briefings, a organização de referências e a geração de possibilidades estruturais, sem substituir o julgamento e a criatividade do designer.</li>
+</ul>
+<hr>
+<h2>Conclusão</h2>
+<p>O sistema modular mostrou que o design pode gerar valor não apenas pelas interfaces entregues, mas também pela transformação dos processos usados para construí-las.</p>
+<p>O que começou como o pedido de um mockup base virou uma biblioteca modular e colaborativa, adotada por toda a equipe e incorporada à rotina de produção. A solução contribuiu para um aumento estimado de 50% na produtividade semanal, uma redução estimada no tempo de criação e a eliminação de uma fila de mais de 150 projetos em três meses.</p>
+<p>Essa experiência ampliou minha compreensão sobre o papel do UX/UI Designer na identificação de problemas, na construção de soluções escaláveis e na geração de valor para o negócio.</p>
+<p><strong>Padronizar a estrutura não significa padronizar a criatividade. Significa criar espaço para que ela aconteça.</strong></p>
+<hr>
+<p><em>Samille Leão · UX/UI Designer · Portfólio: <a href="https://www.samilleleao.net">samilleleao.net</a></em></p>
+</article>
+</body>
+</html>
