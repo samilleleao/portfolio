@@ -997,3 +997,46 @@ main,footer{position:relative;z-index:1}
 .scrollshot:hover .hint{opacity:0}
 @media (hover:none){.scrollshot .frame{height:auto;max-height:none}.scrollshot .hint{display:none}.scrollshot .frame{height:520px;overflow-y:auto}}
 .shot figcaption b{color:var(--ink)}
+
+/* ---------- Design em escala v2 ---------- */
+.devj{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));counter-reset:dj}
+@media (min-width:760px){.devj{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.devj li{counter-increment:dj;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:4px;align-content:start;min-width:0;position:relative}
+.devj li::before{content:counter(dj,decimal-leading-zero);font:500 12px var(--font-mono);color:var(--accent-ink)}
+.devj li b{font-size:15px;line-height:1.25}
+.devj li span{font-size:13px;color:var(--muted);line-height:1.35}
+.devj li.k{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.devj li.k::before,.devj li.k span{color:inherit;opacity:.85}
+.disc{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:860px){.disc{grid-template-columns:1fr 1fr}}
+.disc .col{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:10px;align-content:start}
+.disc .col b{font:500 11.5px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+.disc .col h3{font-size:26px}
+.disc .col ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--muted);font-size:15px}
+.disc .opp{grid-column:1/-1;display:grid;gap:10px;justify-items:center;text-align:center}
+.disc .opp .arrow2{font-size:26px;color:var(--accent);line-height:1}
+.disc .opp p{max-width:44ch;font-weight:600;font-size:17px}
+.disc .opp .sys{background:var(--stage);color:var(--stage-fg);border-radius:16px;padding:16px 24px;display:grid;gap:4px}
+.disc .opp .sys strong{font-family:var(--font-display);font-weight:400;font-size:30px;letter-spacing:.01em}
+.disc .opp .sys span{font-size:13px;color:var(--hi);font-family:var(--font-mono);letter-spacing:.06em;text-transform:uppercase}
+.alt3{display:grid;gap:14px;grid-template-columns:1fr;align-items:end}
+@media (min-width:820px){.alt3{grid-template-columns:1fr 1.15fr 1fr}}
+.alt3 > div{border-radius:20px;padding:22px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px}
+.alt3 b{font:500 11.5px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.alt3 h3{font-size:28px}
+.alt3 p{font-size:14.5px;color:var(--muted)}
+.alt3 .pick{background:var(--accent);border-color:var(--accent);color:var(--on-accent);padding:30px 22px;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--accent) 70%,transparent)}
+.alt3 .pick b,.alt3 .pick p{color:inherit;opacity:.85}
+.meter{display:grid;gap:4px;font-size:12.5px}
+.meter i{display:block;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.meter i::after{content:"";display:block;height:100%;width:var(--v);background:var(--accent)}
+.alt3 .pick .meter i{background:rgba(255,255,255,.25)}.alt3 .pick .meter i::after{background:var(--hi)}
+.projs{display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:760px){.projs{grid-template-columns:1fr 1fr}}
+.projs div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14.5px;color:var(--muted)}
+.projs div b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:2px}
+.value{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:860px){.value{grid-template-columns:repeat(3,1fr)}}
+.value > div{border-radius:20px;padding:22px;background:var(--surface);border:1px solid var(--line);display:grid;gap:8px;align-content:start}
+.value h3{font-size:24px}
+.value ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:14.5px;color:var(--muted)}
