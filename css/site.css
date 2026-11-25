@@ -1040,3 +1040,25 @@ main,footer{position:relative;z-index:1}
 .value > div{border-radius:20px;padding:22px;background:var(--surface);border:1px solid var(--line);display:grid;gap:8px;align-content:start}
 .value h3{font-size:24px}
 .value ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:14.5px;color:var(--muted)}
+
+/* Card Design em escala no leque */
+.tc-esc{background:radial-gradient(circle at 70% 20%,#16403D,#0B1413 70%);color:#E9F2EF}
+.tc-esc .tc-k{color:var(--hi)}
+.tc-esc .tc-t{font-family:var(--font-display);font-weight:400;font-size:14cqw;line-height:.9;letter-spacing:.01em}
+.tc-sites{position:relative;flex:1;min-height:0;margin:2cqw 0}
+.tc-sites img{position:absolute;top:0;width:44%;height:100%;object-fit:cover;object-position:top;border-radius:2.5cqw;box-shadow:0 10px 24px -8px rgba(0,0,0,.6);transition:transform .6s var(--ease)}
+.tc-sites img:nth-child(1){left:0;transform:rotate(-7deg) translateY(6%)}
+.tc-sites img:nth-child(2){left:28%;z-index:2}
+.tc-sites img:nth-child(3){right:0;transform:rotate(7deg) translateY(6%)}
+.fan a:hover .tc-sites img:nth-child(1){transform:rotate(-10deg) translate(-4%,2%)}
+.fan a:hover .tc-sites img:nth-child(3){transform:rotate(10deg) translate(4%,2%)}
+.tc-esc .tc-d{color:#B8C9C5}.tc-esc .tc-d b{color:#fff}
+.fan a .tc-esc{padding-bottom:64px}
+.fan a .tc-sites{display:block;flex:1 1 auto;height:auto;min-height:30cqw}
+.fan a .tc-sites img{position:absolute!important;top:0!important;width:40%!important;height:100%!important;object-fit:cover!important;object-position:top!important;transform:none;border-radius:2.5cqw}
+.fan a .tc-sites img:nth-child(1){left:2%;transform:rotate(-8deg) translateY(5%)}
+.fan a .tc-sites img:nth-child(2){left:30%;z-index:2}
+.fan a .tc-sites img:nth-child(3){left:58%;transform:rotate(8deg) translateY(5%)}
+.fan a:hover .tc-sites img{transform:none}
+.fan a:hover .tc-sites img:nth-child(1){transform:rotate(-11deg) translate(-4%,3%)}
+.fan a:hover .tc-sites img:nth-child(3){transform:rotate(11deg) translate(4%,3%)}
