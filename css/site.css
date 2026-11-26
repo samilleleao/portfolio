@@ -1062,3 +1062,22 @@ main,footer{position:relative;z-index:1}
 .fan a:hover .tc-sites img{transform:none}
 .fan a:hover .tc-sites img:nth-child(1){transform:rotate(-11deg) translate(-4%,3%)}
 .fan a:hover .tc-sites img:nth-child(3){transform:rotate(11deg) translate(4%,3%)}
+
+/* Design em escala: indicadores finais */
+@media (min-width:900px){.kpis.k8{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.kpis.k8 .kpi strong{font-size:clamp(36px,4vw,54px)}
+.cmp{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:18px}
+.cmp-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+.cmp-leg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.cmp-leg i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.cmp-leg i.b{background:var(--line)}.cmp-leg i.a{background:var(--accent);margin-left:8px}
+.cmp-row{display:grid;grid-template-columns:1fr;gap:8px}
+@media (min-width:760px){.cmp-row{grid-template-columns:240px 1fr;align-items:center}}
+.cmp-row > span{font-size:14.5px;font-weight:600}
+.pair{display:grid;gap:5px}
+.pair i{display:flex;align-items:center;justify-content:flex-end;height:22px;width:var(--w);min-width:44px;border-radius:6px;padding-right:8px;transform-origin:left}
+.pair i b{font:500 12px var(--font-mono);font-variant-numeric:tabular-nums}
+.pair i.b{background:var(--line);color:var(--muted)}
+.pair i.a{background:var(--accent);color:var(--on-accent)}
+.cmp-row.down .pair i.a{background:var(--hi);color:var(--hi-ink)}
+@supports (animation-timeline: view()){.pair i{animation:gx linear both;animation-timeline:view();animation-range:entry 10% cover 35%}}
